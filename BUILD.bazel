@@ -1,22 +1,11 @@
 java_library(
     name = "A",
     srcs = ["A.java"],
-    deps = [
-        "@google_java_format",
-        ":B",
-    ]
+    ["//visibility:public"]
 )
 
 java_library(
     name = "B",
     srcs = ["B.java"],
-    deps = [
-        "@com_google_guava_guava",
-        ":C",
-    ]
-)
-
-java_library(
-    name = "C",
-    srcs = ["C.java"],
+    ["//visibility:public"]
 )
