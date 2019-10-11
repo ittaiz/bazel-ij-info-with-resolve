@@ -3,5 +3,6 @@ public class A {
 
   public A() {
     System.out.println(B.class);
+    CloseOp.make();
   }
 }
